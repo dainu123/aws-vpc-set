@@ -1,7 +1,7 @@
 ---
 - name: Setup Vprofile stack
   hosts: localhost
-  connection: localhost
+  connection: local
   gather-facts: no
   tasks:
     - name: Import VPC setup variable
