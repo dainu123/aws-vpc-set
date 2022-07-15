@@ -1,4 +1,4 @@
-mginx-ami: ami-0960ab670c8bb45f3
+mginx_ami: ami-0960ab670c8bb45f3
 tomcat_ami: ami-0960ab670c8bb45f3
 memcache_ami: ami-0960ab670c8bb45f3
 rmq_ami: ami-0960ab670c8bb45f3
