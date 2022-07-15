@@ -59,7 +59,7 @@
       blockinfile:
          path: vars/output_vars
          block: 
-             BastionSGid: "{{BAstionSG_out.group_id}}"
+             BastionSGid: {{BAstionSG_out.group_id}}
 
 
 
