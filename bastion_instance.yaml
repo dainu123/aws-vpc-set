@@ -32,7 +32,7 @@
           - proto: tcp
             from_port: 22
             to_port: 22
-            cidr_ip: "{{MYIP}}"
+            cidr_ip: "{{MyIP}}"
       register: BAstionSG_out
     - name: "Bastion-Host"
       ec2:
