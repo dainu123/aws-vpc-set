@@ -29,13 +29,13 @@
         region: "{{region}}"
         vpc_id: "{{vpcid}}"
         rules:
-           proto: tcp
-           from_port: 22
-           to_port: 22
-           cidr_ip: "{{MYIP}}"
+          - proto: tcp
+            from_port: 22
+            to_port: 22
+            cidr_ip: "{{MYIP}}"
       register: BAstionSG_out
-    - ec2:
-      name: "Bastion-Host"
+    - name: "Bastion-Host"
+      ec2:
         key_name: vprofile-key
         region: "{{region}}"
         instance_type: t2.micro
