@@ -1,0 +1,12 @@
+vpcid: vpc-0163f559b9e247174
+pubsub1id: subnet-0eca8f8e5da744c53
+pubsub2id: subnet-0955183f9b2ae8ccb
+pubsub3id: subnet-06fcb29afe68afff7
+privsub1id: subnet-05deab98bbe7f0a1b
+privsub2id: subnet-0563a2691095b4a31
+privsub3id: subnet-05d1c972fde9d31af
+igwid: igw-0405ff9b90774c4a5
+pubRTid: rtb-0e8f0f706323d56d1
+NATGWid: nat-0605664bf0ce7c65a
+privRTid: rtb-0e50b41030c2b938d
+BastionSGid:
