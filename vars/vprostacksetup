@@ -1,0 +1,7 @@
+mginx-ami: ami-087a7e05bc9effe2d
+tomcat_ami: ami-087a7e05bc9effe2d
+memcache_ami: ami-087a7e05bc9effe2d
+rmq_ami: ami-087a7e05bc9effe2d
+mysql_ami: ami-087a7e05bc9effe2d
+
+region: us-east-2
