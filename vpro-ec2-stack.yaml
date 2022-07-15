@@ -44,15 +44,15 @@
          vpc_id: "{{vpcid}}"
          purge_rules: no
          rules:
-           -proto: tcp
-            from_port: 80
-            to_port: 80
-            group_id: "{{vproELBSG_out.group_id}}"
+           - proto: tcp
+             from_port: 80
+             to_port: 80
+             group_id: "{{vproELBSG_out.group_id}}"
 
-           -proto: tcp
-            from_port: 22
-            to_port: 22
-            group_id: "{{BastionSG_out.group_id}}"
+           - proto: tcp
+             from_port: 22
+             to_port: 22
+             group_id: "{{BastionSG_out.group_id}}"
       register: vproStackSG_out  
     - name: Create Security group with its own sg id
       ec_group:
@@ -62,8 +62,8 @@
          vpc_id: "{{vpcid}}"
          purge_rules: no
          rules:
-           -proto: all
-            group_id: "{{vproStackSG_out.group_id}}"
+           - proto: all
+             group_id: "{{vproStackSG_out.group_id}}"
       
 
 
