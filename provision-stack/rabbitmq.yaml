@@ -34,14 +34,15 @@
 
     - apt_repository:
         repo: "deb https://dl.bintray.com/rabbitmq/debian bionic main"
-        state: latest
+        state: present
+        update_cache: yes
       tags:
         - package
 
     - name: Install Rabbit MQ
       apt:
         name: rabbitmq-server
-        state: latest
+        state: present
         update_cache: yes
       tags:
         - package
