@@ -29,8 +29,8 @@
 
     - name: creating mysql user
       mysql_user:
-        name: admin
-        password: admin123
+        name: "{{dbuser}}"
+        password: "{{dbpass}}"
         priv: '*.*:ALL'
         host: '%'
         state: present
@@ -38,7 +38,7 @@
 
     - name: Creating accounts DB
       mysql_db:
-        name: accounts
+        name: "{{dbname}}"
         state: present
 
     - name: Enable remote login to mysql svc

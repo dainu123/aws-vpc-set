@@ -12,9 +12,9 @@
 
     - name: Restoring DB
       mysql_db:
-        name: accounts
-        login_user: admin
-        login_password: admin123
+        name: "{{dbname}}"
+        login_user: "{{dbuser}}"
+        login_password: "{{dbpass}}"
         state: import
         target: /tmp/db_backup.sql
       notify:

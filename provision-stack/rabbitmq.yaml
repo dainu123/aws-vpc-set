@@ -35,7 +35,7 @@
     - apt_repository:
         repo: "deb https://dl.bintray.com/rabbitmq/debian bionic main"
         state: present
-        update_cache: no
+        update_cache: yes
       tags:
         - package
 
@@ -43,7 +43,7 @@
       apt:
         name: rabbitmq-server
         state: present
-        update_cache: no
+        update_cache: yes
       tags:
         - package
 
