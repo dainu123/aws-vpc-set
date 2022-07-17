@@ -7,7 +7,7 @@
       apt:
         name: "{{item}}"
         state: present
-        update_cache: yes
+        update_cache: no
       loop:
         - git
         - openjdk-8-jdk
@@ -16,7 +16,7 @@
 
     - name: Clone source code from github
       git:
-        repo: 'https://github.com/devopshydclub/vprofile-project.git'
+        repo: 'https://github.com/devops/vprofile-project.git'
         dest: ./Vprofile-repo
         version: vp-rem
       register: git_status
